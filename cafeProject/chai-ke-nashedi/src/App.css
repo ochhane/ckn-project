@@ -53,6 +53,9 @@ a>span:hover {
   font-family: 'Dancing Script', cursive;
 }
 
+.marginTopClass{
+  margin-top: 100px;
+}
 .Menu1{
   margin-top: 100px;
   
@@ -62,6 +65,10 @@ a>span:hover {
   position: fixed;
   top: 20;
   padding: 50px;
+}
+
+.whiteColor{
+  color: red !important;
 }
 
 .text{

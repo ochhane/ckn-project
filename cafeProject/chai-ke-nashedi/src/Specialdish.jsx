@@ -4,7 +4,7 @@ import { Button, Card } from "react-bootstrap";
 function Specialdish() {
     return (
         [
-            <div className="text-center container spDish">
+            <div className="text-center container spDish marginTopClass">
                 <div className="spDish1">
                     <h2>Our Special Dishes</h2>
                     <h3>We Create Delicious Moments</h3>

@@ -3,7 +3,7 @@ import React from "react";
 function Gorgeous(){
     return(
         [
-            <div className="container" style={{marginTop:"5%"}}>
+            <div className="container marginTopClass" style={{marginTop:"5%"}}>
             <div className="row">
             <div className="col">
             <div className="inner-box" style={{textAlign:"justify"}}>
