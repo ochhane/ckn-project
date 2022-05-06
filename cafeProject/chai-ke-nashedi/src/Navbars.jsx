@@ -1,4 +1,5 @@
 import React from "react";
+import Login from "./Login";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 function Navbars() {
 
@@ -8,7 +9,7 @@ function Navbars() {
       <div className="">
         <div className="">
           <div className="row">
-            <Navbar className="shadow-1 fixed-top" bg="black" style={{ float: "right", marginTop: "41px" }} expand="lg"  >
+            <Navbar className="shadow-1" bg="black" style={{ float: "right", marginTop: "41px" }} expand="lg"  >
               <Container >
                 <Navbar.Brand className="col-1" href="#home"><a href="index.html"><img src="images/logo.png" alt="Artica" /></a></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -22,7 +23,7 @@ function Navbars() {
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link className="text-light" href="#home">About</Nav.Link>
+                    <Nav.Link className="text-light" href="/Signup">About</Nav.Link>
                     <Nav.Link className="text-light" href="#link">Reservation</Nav.Link>
                     <NavDropdown title={<span className="text-light my-auto">Home</span>} id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -47,7 +48,7 @@ function Navbars() {
                       <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link className="text-light" href="#home">Contact</Nav.Link>
-                    <button className="btn btn-outline-white text-white border-white">Reservation</button>
+                    <button className="btn btn-outline-white text-white border-white">Reservation </button>
                   </Nav>
                 </Navbar.Collapse>
               </Container>

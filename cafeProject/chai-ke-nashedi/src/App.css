@@ -76,3 +76,20 @@ a>span:hover {
   padding-bottom: 30px;
 }
 
+.loginPage{
+  background-image: url("../public/images/background.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginForm{
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 80vh;
+width: 30vw;
+background: Orgba(255, 255,255,0.15);
+}

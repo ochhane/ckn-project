@@ -1,4 +1,6 @@
 import './App.css';
+import $ from "jquery"
+import {Route, Routes, Switch} from "react-router-dom"
 import Header from './Header';
 import Navbars from './Navbars';
 import Specialdish from './Specialdish';
@@ -12,9 +14,16 @@ import Qutes from "./Qutes";
 import Marquee from "./Marquee";
 import Booking from "./Booking";
 import Footer from "./Footer";
+import Login from './Login';
+import Signup from './Signup';
 function App() {
   return (
     <div className="App">
+    <Routes>
+    <Route path='/Signup' element={<Signup/>}/>
+    </Routes>
+      
+  
       <Header></Header>
       <Navbars/>
       <Carousell/>
@@ -29,7 +38,8 @@ function App() {
       <Booking/>
       <Gorgeous/>
       <Footer/>
-      
+      <Login/>
+
     </div>
   );
 }
