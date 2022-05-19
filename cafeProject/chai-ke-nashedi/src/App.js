@@ -19,27 +19,34 @@ import Signup from './Signup';
 function App() {
   return (
     <div className="App">
+    <Header/>
+    <Navbars/>
     <Routes>
-    <Route path='/Signup' element={<Signup/>}/>
+      <Route path='/Signup' element={<Signup/>}/>
+      <Route path='/Login' element={<Login/>}/>
+      <Route exact path='/' element={
+        <>
+        
+        
+        <Carousell/>
+        <Discover/>
+        <Back1/>
+        <Specialdish/>
+        <Recipes/>
+        <Menu/>
+        
+        <Qutes/>
+        <Marquee/>
+        <Booking/>
+        <Gorgeous/>
+        <Footer/>
+        </>  
+      }
+      ></Route>
     </Routes>
       
   
-      <Header></Header>
-      <Navbars/>
-      <Carousell/>
-      <Discover/>
-      <Back1/>
-      <Specialdish/>
-      <Recipes/>
-      <Menu/>
-      
-      <Qutes/>
-      <Marquee/>
-      <Booking/>
-      <Gorgeous/>
-      <Footer/>
-      <Login/>
-
+     
     </div>
   );
 }

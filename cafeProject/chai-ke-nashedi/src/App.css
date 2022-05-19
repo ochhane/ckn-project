@@ -60,11 +60,15 @@ a>span:hover {
   margin-top: 100px;
   
 }
+.NavbarDef{
+  background-color: gray;
+  padding: 0 0 0 0 !important;
+}
 .Navbarsticky{
-  position: -webkit-fixed;
-  position: fixed;
-  top: 20;
-  padding: 50px;
+  display: block;
+  position: fixed !important;
+  top:0;
+  background-color: gray;
 }
 
 .whiteColor{

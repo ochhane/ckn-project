@@ -1,27 +1,61 @@
+import React,{useState} from "react";
 import styled from "styled-components";
-import Button from "./components/Button";
 import Icon from "./components/Icon";
-import Input from "./components/Input";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { Button } from "react-bootstrap";
+import Signup from "./Signup";
+import axios from "axios"
 
-function Login() {
+function Login() {  
+  
+  const [Username,setUsername] =useState();
+  const [Password,setPassword]=useState();
+
+  const user = {
+    'email': Username,
+    'password':Password
+  };
+
+ 
+
+
+  
+  
+  
   const FacebookBackground =
     "linear-gradient(to right, #0546A0 0%, #0546A0 40%, #663FB6 100%)";
   const InstagramBackground =
     "linear-gradient(to right, #A12AC4 0%, #ED586C 40%, #F0A853 100%)";
   const TwitterBackground =
     "linear-gradient(to right, #56C1E1 0%, #35A9CE 50%)";
+    const loginClick = () =>{
+      debugger
+      axios.post(`https://reqres.in/api/login`, user )
+      .then(res => {
+        alert(res.data.token === 'QpwL5tke4Pnpja7X4');
+      }, err => {
+        debugger
+        alert(err);
+      })
+  
+    }
   return (
+     
     <div className="loginPage">
     <MainContainer >
     <WelcomeText><img src="images/png.png" style={{width:"150px",height:"150px"}}></img> </WelcomeText>
-    <InputContainer>
-      <Input type="text" placeholder="Email" />
-      <Input type="password" placeholder="Password" />
-    </InputContainer>
+    
+      <input type="email" name="email" id="email" autoComplete="off" 
+    
+      onChange={(e)=>{setUsername(e.target.value)}} 
+      placeholder="Email" />
+      <input type="password"  name="password" id="password" autoComplete="off" 
+      
+      onChange={(e)=>{setPassword(e.target.value)}}  placeholder="Password" />
+    
     <ButtonContainer>
-      <Button content="Login" />
-      <Button content="Sign Up" />
+      <Button   onClick={loginClick}  >Login 123</Button>
+      
     </ButtonContainer>
     <LoginWith>OR LOGIN WITH</LoginWith>
     <HorizontalRule />
